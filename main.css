@@ -3,12 +3,12 @@ body {
     animation-fill-mode: both;
     animation-delay: 0ms, 1s;
 
-    background: rgb(217, 208, 202);
+    background: rgb(227, 218, 212);
     transition: background-color 1s linear;
 }
 @keyframes fadebg{
-    from { background-color: rgb(217, 208, 202); }
-    to { background-color: rgb(217, 208, 202); }
+    from { background-color: rgb(227, 218, 212); }
+    to { background-color: rgb(227, 218, 212); }
 }
 @keyframes fadeopacity{
     from { opacity: 0; }
