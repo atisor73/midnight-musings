@@ -70,6 +70,13 @@ pcontent {
     left: 85px;
     margin-right: 160px;
     margin-bottom: 20px;
+
+    /* border: solid; */
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(212, 136, 145);
+    border-radius: 20px;
 }
 pcontent:after{
     content:"\a";
