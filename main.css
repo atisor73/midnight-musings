@@ -1,0 +1,31 @@
+body {
+    animation: fadebg 2s, fadeopacity 3s;
+    animation-fill-mode: both;
+    animation-delay: 0ms, 1s;
+
+    background: rgb(217, 208, 202);
+    transition: background-color 1s linear;
+}
+@keyframes fadebg{
+    from { background-color: rgb(217, 208, 202); }
+    to { background-color: rgb(217, 208, 202); }
+}
+@keyframes fadeopacity{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.glass {
+    margin-top: 10%; 
+    position: relative;
+    max-width: 900px;
+}
+
+.glass a{
+    display: block;
+    position: absolute;
+}
+
+
+

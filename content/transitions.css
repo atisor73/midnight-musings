@@ -1,0 +1,122 @@
+body{
+    overflow-x: hidden; /* hide horizontal scrollbar */
+    animation: fadein 2s;
+    background: rgb(0, 2, 8);
+}
+
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+
+    font-family : 'Antic Slab', serif;
+    padding : 18px;
+    padding-left:65px;
+    font-size : 34px;
+    color : rgb(236, 230, 211);
+}
+h1:hover{
+    background-color: rgb(236, 230, 211);
+    color: rgb(0,2,8);
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 1s;
+    
+}
+
+ptitle {
+    animation: slideup 3.8s ease forwards;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+
+    font-family : 'Antic Slab', serif;
+    font-size : 33px;
+    font-style : bold;
+    color: rgb(236, 230, 211);
+    /* color: rgb(212, 136, 145); */ 
+
+    display: block;
+    position: relative;
+    left: 62px;
+    margin-bottom: 8px;
+}
+ptitle:after{
+    content:"\a";
+    white-space: pre;
+}
+ptitle:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(182, 106, 115);
+    cursor: pointer;
+}
+
+pcontent {
+    animation: slideup 4s ease forwards;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+
+    font-family : 'Quantico', sans-serif;
+    color: rgb(215, 210, 190);
+
+    display: block;
+    position: relative;
+    left: 85px;
+    margin-right: 160px;
+    margin-bottom: 20px;
+}
+pcontent:after{
+    content:"\a";
+    white-space: pre;
+}
+
+/* 
+ANIMATING 
+*/
+@keyframes fadein{
+    from { background: rgb(215, 210, 200); }
+    to { background: rgb(0, 2, 8); }
+}
+@keyframes slidein {
+    from {
+        margin-left: +200%;
+        width: 300%;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes slideup {
+    0% {
+      transform: translateY(1000px);
+      opacity: 0; 
+    }
+    100% {
+      transform: translateY(0px);
+      opacity 1;
+    }
+  }
+
+
+
+/*
+ZOOM ON CLICK FOR IMAGES
+*/
+input[type=checkbox] {
+    display: none;
+    width:1300px;
+    text-align:center;
+  }
+  
+  .container-fluid img {
+  
+      transition: transform 0.75s ease;
+      cursor: zoom-in;
+  }
+  
+  input[type=checkbox]:checked ~ label > img {
+    transform: scale(1.3);
+    cursor: zoom-out;
+  }

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<script src="../jquery.js"></script>
+<link rel="stylesheet" href="main.css">
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- animsition.css -->
+<link rel="stylesheet" href="../animsition/dist/css/animsition.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script src="../animsition/dist/js/animsition.min.js"></script>
+
+<!-- favicon silliness -->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="../favicon/site.webmanifest">
+<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<title>r0s1ta</title>
+</head>
+
+
+<body>
+<br>
+<div class="header"><h1>the inner quibbles of an anti-interpretative mind </h1></div>
+
+
+<ptitle>12.26.20</ptitle>
+<pcontent>
+    There's a physical interpretation regarding antimatter can be interpreted as matter traveling backwards in time. I'm not sure how I vibe with that interpretation. Just because you can draw something on a diagram and interpret an arrow-switch the same way...
+    which begs the question, is mathematical equivalence <em>enough</em> to 
+    <center><div class="container-fluid"><div class="row">
+    <input type="checkbox" id="insectoid"><label for="insectoid">  
+        <img src="metamorphosis.PNG" width=300px>
+    </label> 
+    </div></div></center>
+
+
+    For some reason the word petrichor makes me sad. 
+    When I was little I thought deserts were boring
+</pcontent>
+
+
+<ptitle>12.25.20</ptitle>
+<pcontent>
+    For all of you plant-lovers out there, go check out tree crowning and edelweiss flowers. The petal lengths look purposefully uneven. For some reason I've always loved daisies. They're not the most interesting, but I find the shape of the petals very inviting. I hate when people gift flowers. I always feel guilty for killing them. <br>
+    I'm starting "Godel, Escher, and Bach." It's been a while since I've read non-female narratives. Found some lecturers worth watching by Cedric Villani. I was looking through my old journal the other day, and found lots of doodles of headless men. There's something so charming and figurative about the concept. Although, to be fair, at the time they were headless bc heads and faces are hard for me to draw. 
+    
+    I'm gonna go work on animating a drawing in "The Metamorphosis of Prime Intellect". I should maybe finishing reading it too. 
+</pcontent>
+
+
+<ptitle>12.24.20</ptitle>
+<pcontent>
+Discovered Alfred workflows, but too lazy to start writing any. 
+Planning to look at cicada 3301 puzzles sometime. On day 11 of advent of code! Skipped day 7 part 2 bc I suck at recursion. I'm trying to learn a bit of assembly but it's so boring. The names of the commands look cool though, like some 25th century attempt at  abstract poetry. Maybe I just need to find a mini-project to motivate myself.
+ Currently watching George Hotz program while I work. His keyboard is very soothing. I vibe with his brain, I think open sourcing his company is fucking genius. Avoids all the bullshit legal shit. Self driving cars are the most terrifying upcoming thing to a fellow skater/biker. Sometimes I rely on the driver <em>not</em>> to see me, or to like, behave slow and clumsly like a human. Ugh. Hopefully we'll survive it. 
+ <br><br>
+The VSCode Red theme is surprisingly brilliant when working with HTML/CSS. All the tags sort of blend into the background so you can focus on the text and variables. I feel like I'm coding inside the guts of my enemies. <br>
+WPM is up to 130 on keybr! Although, this is without punctuation or capitalization and the words aren't even English. I can't tell if I'm actually improving or if it's bc of the new keyboard. I found my new favorite color the other day by complete accident. To make my blackened shrimp tacos, I peeled and de-veined the lil critters. Being full made me tired and lazy so I left the tails out for a day or two. Then BAM. I came back and they were this silvery shell-pink. An un-hexable moment. 
+</pcontent>
+
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+<script>
+$(document).ready(function() {
+    $(".animsition").animsition({
+      inClass: 'fade-in',
+      outClass: 'fade-out',
+      inDuration: 1500,
+      outDuration: 800,
+      linkElement: '.animsition-link',
+      // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+      loading: true,
+      loadingParentElement: 'body', //animsition wrapper element
+      loadingClass: 'animsition-loading',
+      loadingInner: '', // e.g '<img src="loading.svg" />'
+      timeout: false,
+      timeoutCountdown: 5000,
+      onLoadEvent: true,
+      browser: [ 'animation-duration', '-webkit-animation-duration'],
+      // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+      // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+      overlay : false,
+      overlayClass : 'animsition-overlay-slide',
+      overlayParentElement : 'body',
+      transition: function(url){ window.location.href = url; }
+    });
+  });
+</script>
+</html>
