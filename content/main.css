@@ -1,9 +1,9 @@
 
 body{
     overflow-x: hidden; /* hide horizontal scrollbar */
-    animation: fadebg 2s, fadeopacity 7s;
+    animation: fadebg 1.8s, fadeopacity 6s;
     animation-fill-mode: both;
-    animation-delay: 0ms, 1.8s;
+    animation-delay: 0.5ms, 1.8s;
     background: rgb(0, 2, 8);
     transition: background-color 1s linear;
 }
@@ -20,6 +20,7 @@ body{
     padding: 18px;
     padding-left: 55px;
     padding-right: 65px;
+    padding-top: 30px;
 }
 h1 {
     font-family : 'Antic Slab', serif;
@@ -27,6 +28,7 @@ h1 {
     /* padding-left:65px; */
     font-size : 34px;
     color : rgb(236, 230, 211);
+    border-radius: 20px;
 }
 h1:hover{
     background-color: rgb(236, 230, 211) !important;
