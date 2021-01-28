@@ -1,4 +1,3 @@
-
 body{
     overflow-x: hidden; /* hide horizontal scrollbar */
     animation: fadebg 1.8s, fadeopacity 6s;
@@ -27,7 +26,8 @@ h1 {
     padding : 10px;
     /* padding-left:65px; */
     font-size : 34px;
-    color : rgb(236, 230, 211);
+    /* color : rgb(236, 230, 211); */
+    color : #B11033;
     border-radius: 20px;
 }
 h1:hover{
@@ -44,9 +44,10 @@ ptitle {
     font-family : 'Antic Slab', serif;
     font-size : 33px;
     font-style : bold;
-    color: rgb(236, 230, 211);
     /* color: rgb(212, 136, 145);  */
-
+    /* color : rgb(236, 230, 211); */
+    color : #B11033;
+    
     display: block;
     position: relative;
     left: 62px;
@@ -58,7 +59,9 @@ ptitle:after{
 }
 ptitle:hover{
     text-decoration: underline;
-    text-decoration-color: rgb(182, 106, 115);
+    /* text-decoration-color: rgb(182, 106, 115); */
+    text-decoration-color: #B11033;
+
     cursor: pointer;
 }
 
@@ -77,7 +80,9 @@ pcontent {
     padding: 12px;
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(212, 136, 145);
+    /* border-color: rgb(212, 136, 145); */
+    border-color: #B11033;
+
     border-radius: 20px;
 }
 pcontent:after{
